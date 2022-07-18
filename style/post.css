@@ -1,0 +1,125 @@
+.post{
+    padding: 64px 0;
+    display: flex;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 767px){
+    .post{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.post-list{
+    flex: 0 0 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+.post-list-single{
+    border: 1px solid #ececec;
+    border-radius: 16px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.post-list-single:last-child{
+    margin-bottom: 0px;
+}
+.post-list-single__left{
+    flex: 0 0 43%;
+    display: flex;
+    position: relative;
+    max-width: 405px;
+    max-height: 282px;
+}
+.post-list-tag{
+    position: absolute;
+    left: 0;
+    top: 24px;
+    padding: 10px 10px 10px 16px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 1;
+    color: #ffffff;
+}
+.post-list-tag.pink-tag{
+    background-color: #f74f78;
+}
+.post-list-single__left img{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+.post-list-single__right{
+    flex: 0 0 57%;
+    padding: 32px;
+}
+.post-list__single-date{
+    color: #9e9fb4;
+    font-size: 14px;
+}
+.post-list__single-title{
+    margin-top: 14px;
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #4a4b4a;
+}
+.post__single-content{
+    color: #9e9fb4;
+    font-size: 16px;
+}
+.article-container{
+    flex: 0 0 25%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+.article-container-title{
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+.article-container__single-article{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+}
+.article-container__single-article:last-child{
+    margin-bottom: 0px;
+}
+.article-container-content{
+    display: flex;
+    flex-direction: column;
+}
+.article-container__image{
+    display: flex;
+    cursor: pointer;
+}
+.article-container__image img{
+    max-width: 64px;
+    max-height: 64px;
+    border-radius: 12px;
+}
+.article-container-content{
+    padding-left: 12px;
+}
+.article-container-content-title{
+    text-decoration: none;
+    margin-bottom: 4px;
+    color: #4a4b4a;
+}
+.article-container-content-author{
+    font-size: 12px;
+    color: #9e9fb4;
+}
+@media only screen and (max-width: 767px){
+    .article-container-title{
+        text-align: center;
+    }
+}

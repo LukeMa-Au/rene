@@ -1,0 +1,95 @@
+.newsletter{
+    max-width: 80rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    align-items: stretch;
+}
+@media only screen and (max-width: 767px){
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+.newsletter__left{
+    flex: 0 0 50%;
+    background-color: #f4f4f6;
+    display: flex;
+    padding: 8px 64px;
+    justify-content: space-between;
+    align-items: center;
+}
+@media only screen and (max-width: 767px){
+    .newsletter__left{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.newsletter__left__img{
+    flex-basis: 50%;
+}
+.newsletter__left__download{
+    display: flex;
+    flex-direction: column;
+}
+.newsletter__left__download h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #4a4b4a;
+}
+.newsletter__right{
+    flex: 0 0 50%;
+    background-color: #e9e8f8;
+    display: flex;
+    padding: 8px 64px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.newsletter__right h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #4a4b4a;
+}
+.newsletter__right span{
+    font-weight: 300;
+    color: #4a4b4a;
+    margin-bottom: 16px;
+}
+.newsletter__subscribe-form{
+    width: 100%;
+}
+.newsletter__subscribe-form form{
+    display: flex;
+}
+.newsletter__subscribe-form input {
+    flex: 1 0 auto;
+    padding: 9px 18px;
+    border: 1px solid #dfdfeb;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: #737491;
+    transition: box-shadow ease 0.2s, border-color ease 0.2s;
+}
+.newsletter__subscribe-form button {
+    border: none;
+    background-color: #16c995;
+    cursor: pointer;
+    padding: 9px 20px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: background-color ease 0.2s;
+}
+.svg-download{
+    fill: white;
+}
+.svg-submit{
+    fill: white;
+}
+.newsletter__subscribe-form button:hover{
+    background-color: rgb(18, 167, 123);
+}

@@ -2,7 +2,7 @@ node {
    // ...
    withAwsCli( 
          credentialsId: 'aws-key', 
-         defaultRegion: 'ap-southeast-2c']) { 
+         defaultRegion: 'ap-southeast-2c') { 
 
         sh ''' 
            # COPY CREATED WAR FILE TO AWS S3

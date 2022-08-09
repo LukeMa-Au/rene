@@ -1,0 +1,108 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #37384e;
+    padding-top: 80px;
+    margin-top: auto;
+}
+@media only screen and (max-width: 767px){
+    .footer{
+        padding-top: 32px;
+    }
+}
+.footer-upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+    margin: auto;
+    width: 100%;
+    padding: 0px 10px;
+    margin-bottom: 64px;
+}
+@media only screen and (max-width: 767px) {
+    .footer-upper{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+.footer-logo{
+    display: block;
+    height: 55px;
+}
+@media only screen and (max-width: 767px) {
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+}
+.footer-logo img{
+    max-width: 153px;
+}
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 767px) {
+    .footer-contact{
+        margin-bottom: 20px;
+        align-items: center;
+    }
+}
+.footer-contact a{
+    display: flex;
+    text-decoration: none;
+    color: #9e9fb4;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: color 0.2s ease;
+}
+.footer-contact a{
+    margin-bottom: 0px;
+}
+@media only screen and (max-width: 767px) {
+    .footer-contact a{
+        margin-bottom: 20px;
+    }
+}
+.svg-3{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    fill: #9e9fb4;
+}
+.footer-media{
+    display: flex;
+    padding-left: 24px;
+}
+.footer-media a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #9e9fb4;
+    border-radius: 12px;
+    margin-right: 8px;
+    transition: background-color 0.2s ease, border 0.2s ease;
+}
+.svg-4{
+    height: 18px;
+    width: 18px;
+}
+.footer-lower{
+    max-width: 80rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+@media only screen and (max-width: 767px) {
+    .footer-lower{
+        justify-content: center;
+    }
+}
+.footer__copyright{
+    color: #9e9fb4;
+}

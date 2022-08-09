@@ -8,7 +8,7 @@ pipeline {
                      sh 'echo "Uploading content with AWS creds"'
                      sh 'echo "Installing aws cli"'
                       sh 'aws s3 ls'
-                     sh 'aws s3 cp ./assets s3://renes3test/ --recursive'
+                     sh 'aws s3 cp ./website s3://renes3test/ --recursive'
                   }
               }
          }
